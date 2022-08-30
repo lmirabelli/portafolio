@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Mukta;
+    src: url(../styles/Mukta-Regular.ttf);
+}
+
+//VARIABLES DE COLORES
+$color1: #000075;
+$color2: #430675;
+$color3: #1762a3;
+$colorWhite: #fff;
+$colorBlack: #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mukta';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23000075' width='11' height='11'/%3E%3Crect fill='%23000076' x='10' width='11' height='11'/%3E%3Crect fill='%23000077' y='10' width='11' height='11'/%3E%3Crect fill='%23000078' x='20' width='11' height='11'/%3E%3Crect fill='%23000079' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%2300007a' y='20' width='11' height='11'/%3E%3Crect fill='%2300007b' x='30' width='11' height='11'/%3E%3Crect fill='%2300007c' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%2300007d' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2300007e' y='30' width='11' height='11'/%3E%3Crect fill='%2300007f' x='40' width='11' height='11'/%3E%3Crect fill='%2300007f' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23000080' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23000081' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23000082' y='40' width='11' height='11'/%3E%3Crect fill='%23000083' x='50' width='11' height='11'/%3E%3Crect fill='%23000084' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23000085' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23000086' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23000087' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23000088' y='50' width='11' height='11'/%3E%3Crect fill='%23000089' x='60' width='11' height='11'/%3E%3Crect fill='%2300008a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%2300008b' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%2300008c' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%2300008d' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%2300008e' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%2300008f' x='70' width='11' height='11'/%3E%3Crect fill='%23000090' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23000091' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23000092' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23000093' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23000094' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23000095' x='80' width='11' height='11'/%3E%3Crect fill='%23000096' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23000097' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23000098' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23000099' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%2300009a' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%2300009b' x='90' width='11' height='11'/%3E%3Crect fill='%2300009c' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%2300009d' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%2300009e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%2300009f' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%230000a0' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%230000a1' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%230000a2' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%230000a3' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%230000a4' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%230000a5' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230000a6' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230000a7' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230000a8' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%230000a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%230000aa' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%230000ab' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%230000ac' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230000ad' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230000ae' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230000AF' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: $colorWhite;
+}
+.menu{
+    position: sticky;
+    backdrop-filter: blur(8px);
+    top: 0;
+    background-color: rgba($colorBlack, 0.3);
+        box-shadow: 0 0 25px $colorBlack;
+        z-index: 1;
+        transition: all 0.5s;
+        &:hover{
+            height: 50px;
+            padding-top: 20px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                transition: all 0.6s;
+                list-style: none;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+}
+.indexBox{
+        margin-top: 5vh;
+        padding: 2vh 0;
+        text-align: center;
+        background-color: rgba($colorBlack, 0.5);
+        box-shadow: 0 7px 15px $colorBlack;
+        h1{
+            width: 60vw;
+            opacity: 0;
+            filter: drop-shadow(4px 4px 10px $colorBlack);
+            animation-duration: 3s;
+            animation-name: up;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
+            cursor: default;
+        }
+        .name{
+            display: flex;
+            justify-content: center;
+            p{  
+                margin: -6.5vw 1vw 0 1vw;
+                font-size: 10.5vw;
+                filter: drop-shadow(4px 4px 10px $colorBlack);
+                opacity: 0;
+                animation-duration: 3s;
+                animation-name: down;
+                animation-delay: 1.6s;
+                animation-fill-mode: forwards;
+                cursor: default;
+            }
+        }
+        .skills{
+            display: flex;
+            justify-content: space-around;
+            margin: 0 3vw;
+            @for $icon from 1 to 10{
+                #icon#{$icon}{
+                    animation: icons;
+                    animation-delay: 1500ms + (200 * $icon);
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+        };
+        img{
+            width: 6vw;
+            opacity: 0;
+            filter: drop-shadow(14px 14px 5px $colorBlack);
+            transition: all 450ms;
+            &:hover{
+                opacity: 0;
+                transform: scale(2);
+            }
+                
+            }
+        }
+        .info{
+            display: flex;
+            padding: 0 2vw;
+            p{
+                text-align: justify;
+                img{
+                    outline: 4px solid transparent;
+                    margin: 0 2vw;
+                    float: left;
+                    border-radius: 10%;
+                    filter: sepia(0.4);
+                    transition: 400ms all;
+                    &:hover{
+                        transform: scale(1.1) rotate(10deg);
+                        filter: sepia(0);
+                        border-radius: 3%;
+                        outline: 4px solid $color3;
+                    }
+                }  
+            }
+        }
+        .papers{
+            img{
+                width: 40vw;
+                filter: grayscale(.66);
+            }
+        }
+        .work{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            h4{
+                width: 100%;
+            }
+            p{
+                opacity: 0.8;
+            }
+            img{
+                width: 80vw;
+                object-fit: cover;
+                border-radius: 4vw;
+                box-shadow: 3px 3px 10px $colorBlack;
+                margin-bottom: 3vh;
+                transition: 450ms all;
+                &:hover{
+                    transform: scale(1.02);
+                    filter: grayscale(0.8);
+                }
+            }
+            .workButton{
+                background: $color3;
+                color: $colorWhite;
+                text-decoration: none;
+                font-weight: 700;
+                border-radius: 10px;
+                box-shadow: 3px 3px 10px $colorBlack;
+            }
+        }
+            .contactData{
+                display: flex;
+                justify-content: space-around;
+                a{
+                    img{
+                        object-fit: contain;
+                    }
+                }
+            }
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10vw;
+    border-top: 2px solid $color3;
+    box-shadow: 0 -4px 10px rgba($colorWhite, 0.3);
+    img{
+        height: 10vw;
+        filter: drop-shadow(0 0 8px rgba($colorWhite, 1));
+    }
+    h2{
+        font-size: 6vw;
+    }
+}
+

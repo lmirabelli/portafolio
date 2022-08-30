@@ -1,0 +1,104 @@
+@media (min-width: 769px){
+    .menu{
+        height: 5vh;
+        padding: 1vh 2vw;
+        width: 80vw;
+        margin: 0 auto;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                a{
+                    color: $colorWhite;
+                    text-decoration: none;
+                    font-weight: 800;
+                    img{
+                        width: 6vw;
+                    }
+                }
+            }
+        }
+    }
+    .indexBox{
+        min-height: 40vh;
+        h1{
+            margin-left: 0.75vw;
+            font-size: 3vw;
+        }
+        .name{
+            p{
+                margin: -6.2vw 1vw 0 1vw;
+                font-size: 8.5vw;
+            }
+        }
+        h3{
+            font-size: 3vw;
+        }
+        .info{
+            p{
+                font-size: 1.4vw;
+                img{
+                    width: 16vw;
+                    height: 16vw;
+                                }
+
+            }
+        }
+
+        .work{
+            width: 40%;
+            display: flex;
+            p{
+                font-size: 1vw;
+                width: 100%;
+            }
+            img{
+                height: 40vh;
+                width: 100%;
+            }
+            .workButton{
+                width: 30%;
+                margin: 15px 10%;
+            }
+        }
+        .contactData{
+            a{
+                img{
+                    width: 6vw;
+                    height: 6vw;
+                    transition: all 400ms;
+                    &:hover{
+                        transform: rotate(360deg) scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    #home{
+        padding: 25vh 0;
+    }
+    .works{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        h3{
+            width: 100%;
+        }
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10vw;
+        border-top: 2px solid $color3;
+        box-shadow: 0 -4px 10px rgba($colorWhite, 0.3);
+        img{
+            height: 7vw;
+            filter: drop-shadow(0 0 8px rgba($colorWhite, 1));
+        }
+        h2{
+            padding-top: 15px;
+            font-size: 2vw;
+        }
+    }
+}

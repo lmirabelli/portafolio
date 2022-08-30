@@ -1,0 +1,64 @@
+@media screen and (max-width: 375px) {
+    .menu{
+        height: 16vw;
+        padding: 3vw;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                a{
+                    img{
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+    }
+    .indexBox{
+        min-height: 22vh;
+        h1{
+            font-size: 6.25vw;
+        }
+        .name{
+            p{
+                margin: -6.5vw 1vw 0 1vw;
+                font-size: 10.5vw;
+            }
+        }
+        h3{
+            font-size: 8vw;
+        }
+        .info{
+            p{
+                font-size: 4vw;
+                img{
+                    width: 38vw;
+                    height: 38vw;
+                                }
+
+            }
+        }
+        
+        .work{
+            p{
+                font-size: 4vw;
+            }
+            img{
+                height: 20vh;
+            }
+            .workButton{
+                width: 35vw;
+                margin: 2vw 4vw;
+                
+            }
+        }
+        .contactData{
+            a{
+                img{
+                    width: 12vw;
+                    height: 12vw;
+                }
+            }
+        }
+    }
+}

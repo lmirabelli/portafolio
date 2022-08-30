@@ -1,0 +1,462 @@
+@font-face {
+  font-family: Mukta;
+  src: url(../styles/Mukta-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23000075' width='11' height='11'/%3E%3Crect fill='%23000076' x='10' width='11' height='11'/%3E%3Crect fill='%23000077' y='10' width='11' height='11'/%3E%3Crect fill='%23000078' x='20' width='11' height='11'/%3E%3Crect fill='%23000079' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%2300007a' y='20' width='11' height='11'/%3E%3Crect fill='%2300007b' x='30' width='11' height='11'/%3E%3Crect fill='%2300007c' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%2300007d' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2300007e' y='30' width='11' height='11'/%3E%3Crect fill='%2300007f' x='40' width='11' height='11'/%3E%3Crect fill='%2300007f' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23000080' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23000081' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23000082' y='40' width='11' height='11'/%3E%3Crect fill='%23000083' x='50' width='11' height='11'/%3E%3Crect fill='%23000084' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23000085' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23000086' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23000087' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23000088' y='50' width='11' height='11'/%3E%3Crect fill='%23000089' x='60' width='11' height='11'/%3E%3Crect fill='%2300008a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%2300008b' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%2300008c' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%2300008d' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%2300008e' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%2300008f' x='70' width='11' height='11'/%3E%3Crect fill='%23000090' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23000091' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23000092' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23000093' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23000094' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23000095' x='80' width='11' height='11'/%3E%3Crect fill='%23000096' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23000097' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23000098' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23000099' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%2300009a' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%2300009b' x='90' width='11' height='11'/%3E%3Crect fill='%2300009c' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%2300009d' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%2300009e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%2300009f' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%230000a0' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%230000a1' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%230000a2' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%230000a3' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%230000a4' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%230000a5' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230000a6' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230000a7' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230000a8' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%230000a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%230000aa' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%230000ab' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%230000ac' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230000ad' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230000ae' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230000AF' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.menu {
+  position: sticky;
+  backdrop-filter: blur(8px);
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 25px #000;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.menu:hover {
+  height: 50px;
+  padding-top: 20px;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul li {
+  transition: all 0.6s;
+  list-style: none;
+}
+.menu ul li:hover {
+  transform: scale(1.3);
+}
+
+.indexBox {
+  margin-top: 5vh;
+  padding: 2vh 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 15px #000;
+}
+.indexBox h1 {
+  width: 60vw;
+  opacity: 0;
+  filter: drop-shadow(4px 4px 10px #000);
+  animation-duration: 3s;
+  animation-name: up;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  cursor: default;
+}
+.indexBox .name {
+  display: flex;
+  justify-content: center;
+}
+.indexBox .name p {
+  margin: -6.5vw 1vw 0 1vw;
+  font-size: 10.5vw;
+  filter: drop-shadow(4px 4px 10px #000);
+  opacity: 0;
+  animation-duration: 3s;
+  animation-name: down;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+  cursor: default;
+}
+.indexBox .skills {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 3vw;
+}
+.indexBox .skills #icon1 {
+  animation: icons;
+  animation-delay: 1700ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon2 {
+  animation: icons;
+  animation-delay: 1900ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon3 {
+  animation: icons;
+  animation-delay: 2100ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon4 {
+  animation: icons;
+  animation-delay: 2300ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon5 {
+  animation: icons;
+  animation-delay: 2500ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon6 {
+  animation: icons;
+  animation-delay: 2700ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon7 {
+  animation: icons;
+  animation-delay: 2900ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon8 {
+  animation: icons;
+  animation-delay: 3100ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills #icon9 {
+  animation: icons;
+  animation-delay: 3300ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.indexBox .skills img {
+  width: 6vw;
+  opacity: 0;
+  filter: drop-shadow(14px 14px 5px #000);
+  transition: all 450ms;
+}
+.indexBox .skills img:hover {
+  opacity: 0;
+  transform: scale(2);
+}
+.indexBox .info {
+  display: flex;
+  padding: 0 2vw;
+}
+.indexBox .info p {
+  text-align: justify;
+}
+.indexBox .info p img {
+  outline: 4px solid transparent;
+  margin: 0 2vw;
+  float: left;
+  border-radius: 10%;
+  filter: sepia(0.4);
+  transition: 400ms all;
+}
+.indexBox .info p img:hover {
+  transform: scale(1.1) rotate(10deg);
+  filter: sepia(0);
+  border-radius: 3%;
+  outline: 4px solid #1762a3;
+}
+.indexBox .papers img {
+  width: 40vw;
+  filter: grayscale(0.66);
+}
+.indexBox .work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.indexBox .work h4 {
+  width: 100%;
+}
+.indexBox .work p {
+  opacity: 0.8;
+}
+.indexBox .work img {
+  width: 80vw;
+  object-fit: cover;
+  border-radius: 4vw;
+  box-shadow: 3px 3px 10px #000;
+  margin-bottom: 3vh;
+  transition: 450ms all;
+}
+.indexBox .work img:hover {
+  transform: scale(1.02);
+  filter: grayscale(0.8);
+}
+.indexBox .work .workButton {
+  background: #1762a3;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #000;
+}
+.indexBox .contactData {
+  display: flex;
+  justify-content: space-around;
+}
+.indexBox .contactData a img {
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10vw;
+  border-top: 2px solid #1762a3;
+  box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.3);
+}
+footer img {
+  height: 10vw;
+  filter: drop-shadow(0 0 8px white);
+}
+footer h2 {
+  font-size: 6vw;
+}
+
+@media screen and (max-width: 375px) {
+  .menu {
+    height: 16vw;
+    padding: 3vw;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li a img {
+    width: 10vw;
+  }
+
+  .indexBox {
+    min-height: 22vh;
+  }
+  .indexBox h1 {
+    font-size: 6.25vw;
+  }
+  .indexBox .name p {
+    margin: -6.5vw 1vw 0 1vw;
+    font-size: 10.5vw;
+  }
+  .indexBox h3 {
+    font-size: 8vw;
+  }
+  .indexBox .info p {
+    font-size: 4vw;
+  }
+  .indexBox .info p img {
+    width: 38vw;
+    height: 38vw;
+  }
+  .indexBox .work p {
+    font-size: 4vw;
+  }
+  .indexBox .work img {
+    height: 20vh;
+  }
+  .indexBox .work .workButton {
+    width: 35vw;
+    margin: 2vw 4vw;
+  }
+  .indexBox .contactData a img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .menu {
+    height: 10vw;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 3vw;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  .menu ul li a img {
+    width: 6vw;
+  }
+
+  .indexBox {
+    min-height: 22vh;
+  }
+  .indexBox h1 {
+    font-size: 6.25vw;
+  }
+  .indexBox .name p {
+    margin: -6.5vw 1vw 0 1vw;
+    font-size: 10.5vw;
+  }
+  .indexBox h3 {
+    font-size: 5vw;
+  }
+  .indexBox .info p {
+    font-size: 2.3vw;
+  }
+  .indexBox .info p img {
+    width: 22vw;
+    height: 22vw;
+  }
+  .indexBox .work p {
+    font-size: 2vw;
+    width: 100%;
+  }
+  .indexBox .work img {
+    height: 22vh;
+  }
+  .indexBox .work .workButton {
+    width: 35vw;
+    margin: 2vw 4vw;
+  }
+  .indexBox .contactData a img {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+@media (min-width: 769px) {
+  .menu {
+    height: 5vh;
+    padding: 1vh 2vw;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  .menu ul li a img {
+    width: 6vw;
+  }
+
+  .indexBox {
+    min-height: 40vh;
+  }
+  .indexBox h1 {
+    margin-left: 0.75vw;
+    font-size: 3vw;
+  }
+  .indexBox .name p {
+    margin: -6.2vw 1vw 0 1vw;
+    font-size: 8.5vw;
+  }
+  .indexBox h3 {
+    font-size: 3vw;
+  }
+  .indexBox .info p {
+    font-size: 1.4vw;
+  }
+  .indexBox .info p img {
+    width: 16vw;
+    height: 16vw;
+  }
+  .indexBox .work {
+    width: 40%;
+    display: flex;
+  }
+  .indexBox .work p {
+    font-size: 1vw;
+    width: 100%;
+  }
+  .indexBox .work img {
+    height: 40vh;
+    width: 100%;
+  }
+  .indexBox .work .workButton {
+    width: 30%;
+    margin: 15px 10%;
+  }
+  .indexBox .contactData a img {
+    width: 6vw;
+    height: 6vw;
+    transition: all 400ms;
+  }
+  .indexBox .contactData a img:hover {
+    transform: rotate(360deg) scale(1.1);
+  }
+
+  #home {
+    padding: 25vh 0;
+  }
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .works h3 {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10vw;
+    border-top: 2px solid #1762a3;
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.3);
+  }
+  footer img {
+    height: 7vw;
+    filter: drop-shadow(0 0 8px white);
+  }
+  footer h2 {
+    padding-top: 15px;
+    font-size: 2vw;
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translate(0, 15px);
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translate(0, 0);
+    filter: blur(0px);
+  }
+}
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translate(0, -15px);
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0px);
+  }
+}
+@keyframes icons {
+  0% {
+    opacity: 0;
+    transform: translate(0, 35px) scale(0.8);
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 0.45;
+    transform: translate(0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
