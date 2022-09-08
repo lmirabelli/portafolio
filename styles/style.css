@@ -80,56 +80,74 @@ body {
 }
 .indexBox .skills #icon1 {
   animation: icons;
-  animation-delay: 1700ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 1650ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon2 {
   animation: icons;
-  animation-delay: 1900ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 1800ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon3 {
   animation: icons;
-  animation-delay: 2100ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 1950ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon4 {
   animation: icons;
-  animation-delay: 2300ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2100ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon5 {
   animation: icons;
-  animation-delay: 2500ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2250ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon6 {
   animation: icons;
-  animation-delay: 2700ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2400ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon7 {
   animation: icons;
-  animation-delay: 2900ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2550ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon8 {
   animation: icons;
-  animation-delay: 3100ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2700ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills #icon9 {
   animation: icons;
-  animation-delay: 3300ms;
-  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2850ms;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 .indexBox .skills img {
@@ -166,6 +184,12 @@ body {
 .indexBox .papers img {
   width: 40vw;
   filter: grayscale(0.66);
+  box-shadow: 14px 14px 21px #000;
+  transition: all 1350ms;
+}
+.indexBox .papers img:hover {
+  filter: grayscale(0);
+  box-shadow: 18px 18px 27px #000;
 }
 .indexBox .work {
   display: flex;
@@ -197,6 +221,11 @@ body {
   font-weight: 700;
   border-radius: 10px;
   box-shadow: 3px 3px 10px #000;
+  transition: all 0.6s;
+}
+.indexBox .work .workButton:hover {
+  background: #fff;
+  color: #1762a3;
 }
 .indexBox .contactData {
   display: flex;
@@ -273,6 +302,7 @@ footer h2 {
 @media screen and (min-width: 376px) and (max-width: 768px) {
   .menu {
     height: 10vw;
+    min-height: 100px;
     width: 80vw;
     margin: 0 auto;
     padding: 3vw;
@@ -452,10 +482,17 @@ footer h2 {
     transform: translate(0, 35px) scale(0.8);
     filter: blur(12px);
   }
-  100% {
+  25% {
     opacity: 0.45;
     transform: translate(0, 0) scale(1);
     filter: blur(0);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 0;
   }
 }
 

@@ -85,9 +85,11 @@ body{
             @for $icon from 1 to 10{
                 #icon#{$icon}{
                     animation: icons;
-                    animation-delay: 1500ms + (200 * $icon);
-                animation-duration: 3s;
-                animation-fill-mode: forwards;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in;
+                    animation-delay: 1500ms + (150 * $icon);
+                    animation-duration: 3.5s;
+                    animation-fill-mode: forwards;
             }
         };
         img{
@@ -127,6 +129,12 @@ body{
             img{
                 width: 40vw;
                 filter: grayscale(.66);
+                box-shadow: 14px 14px 21px $colorBlack;
+                transition: all 1350ms;
+                &:hover{
+                    filter: grayscale(0);
+                    box-shadow: 18px 18px 27px $colorBlack;
+                }
             }
         }
         .work{
@@ -158,6 +166,11 @@ body{
                 font-weight: 700;
                 border-radius: 10px;
                 box-shadow: 3px 3px 10px $colorBlack;
+                transition: all 0.6s;
+                &:hover{
+                    background: $colorWhite;
+                    color: $color3;
+                }
             }
         }
             .contactData{
@@ -186,4 +199,3 @@ footer{
         font-size: 6vw;
     }
 }
-
